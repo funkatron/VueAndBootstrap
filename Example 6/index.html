@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Example 6</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container" id="vue-root">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <h1>Vue and Bootstrap - simple custom component</h1>
+                    <hr>
+                    <bootstrap-panel heading="The heading" footer="The footer">
+                        Lorem <strong>ipsum dolor sit amet</strong>, consectetuer adipiscing
+                        elit. Phasellus nisl dolor, pulvinar id, pharetra a, egestas nec,
+                        ante. Duis scelerisque eleifend metus. Sed non odio id odio varius
+                        rutrum. Pellentesque congue commodo lacus. In semper pede lacinia
+                        felis. Morbi mollis molestie lorem. Morbi suscipit libero. Quisque
+                        ut erat sit amet elit aliquam nonummy. Donec tortor. Aliquam gravida
+                        ullamcorper pede. Praesent eros. Sed fringilla ligula sed odio
+                        pharetra imperdiet. Integer aliquet quam vitae nibh. Nam pretium,
+                        neque non congue vulputate, odio odio vehicula augue, sit amet
+                        gravida pede massa ac lectus. Curabitur a libero vitae dui sagittis
+                        aliquet. Ut suscipit. Curabitur accumsan sem a urna. Ut elit pede,
+                        vulputate sed, feugiat quis, congue sed, lacus.
+                    </bootstrap-panel>
+                </div>
+            </div>
+        </div>
+
+        <!-- make things easy and load from CDN -->
+        <!-- jQuery is required for Bootstrap JS stuff -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- VueJS -->
+        <script src="https://unpkg.com/vue"></script>
+
+        <!-- App JS -->
+        <script src="index.js"></script>
+    </body>
+</html>
