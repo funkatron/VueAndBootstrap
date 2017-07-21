@@ -10,28 +10,28 @@ demonstrate basic concepts of VueJS within an attractive, commonly-used UI frame
 No additional build tools are required. All JS is loaded from CDNs. The focus here is on learning VueJS and
 how it can be applied to existing projects without adopting a new toolchain or throwing out old, working code.
 
-## Example 1
+## Example 1 - Bootstrap panel rendered with Vue
 
 A basic "hello world"-type example, showing how to instantiate Vue and render of data inside the DOM.
 
-## Example 2
+## Example 2 - Rendering a list view with `v-for`
 
 Rendering an array of data into a list view using the [`v-for` directive](https://vuejs.org/v2/guide/list.html). 
 
-## Example 3
+## Example 3 - Rendering a *sorted* list view with `computed`
 
 Using a [`computed` property](https://vuejs.org/v2/guide/computed.html) to render alphabetically-sorted data without modifying the original array. 
 
-## Example 4
+## Example 4 - Add and delete items in list view dynamically
 
 Adding functionality via [`methods`](https://vuejs.org/v2/guide/events.html#Method-Event-Handlers) to add and remove items from an array, and demonstrating the automatic
 re-rendering of Vue.
 
-## Example 5
+## Example 5 - Conditional rendering
 
 Utilize the [`v-if` directive](https://vuejs.org/v2/guide/conditional.html) to conditionally render based on the state of the data.
 
-## Example 6
+## Example 6 - Simple custom component
 
 A simple example of a [custom component](https://vuejs.org/v2/guide/components.html), allowing for complex custom functionality to be wrapped in
 HTML-style tags.
