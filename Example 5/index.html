@@ -28,7 +28,7 @@
 
                         <ul class="list-group">
                             <li class="list-group-item" v-for="(band, index) in bandsAlpha">
-                                <div class="pull-right"><button v-on:click.prevent="removeBand(index)" class="btn btn-danger btn-xs">-</button></div>
+                                <div class="pull-right"><button v-on:click.prevent="removeBand(band.id)" class="btn btn-danger btn-xs">-</button></div>
                                 <em>{{ band.name }}</em>
                             </li>
                         </ul>
@@ -58,6 +58,8 @@
         <script src="https://unpkg.com/vue"></script>
         <!-- Lodash -->
         <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+        <!-- UUID -->
+        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
 
         <!-- App JS -->
         <script src="index.js"></script>

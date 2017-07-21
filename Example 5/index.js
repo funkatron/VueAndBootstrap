@@ -21,11 +21,16 @@ var panel = new Vue({
         addBand: function() {
             var newBandName = this.newBandName; // pull value from bound form model
             if (_.trim(newBandName)) { // don't allow empty names
-                this.bands.push({ name: newBandName });
+                this.bands.push({
+                    id: uuidv4(), // use UUID for unique identifier
+                    name: newBandName
+                });
             }
             this.newBandName = ''; // reset value, which also updates form field
         },
-        removeBand: function(index) {
+        removeBand: function(id) {
+            // we have to remove by ID, because of the alpha sorting
+            var index = _.findIndex(this.bands, {id:id});
             this.bands.splice(index, 1); // remove one item at the passed index
         }
     }

@@ -23,7 +23,7 @@ Vue.component('bootstrap-item-panel', {
 
         <ul class="list-group">
             <li class="list-group-item" v-for="(item, index) in itemsAlpha">
-                <div class="pull-right"><button v-on:click.prevent="removeItem(index)" class="btn btn-danger btn-xs">-</button></div>
+                <div class="pull-right"><button v-on:click.prevent="removeItem(item.id)" class="btn btn-danger btn-xs">-</button></div>
                 <em>{{ item.name }}</em>
             </li>
         </ul>
@@ -62,11 +62,16 @@ Vue.component('bootstrap-item-panel', {
         addItem: function() {
             var newItemName = this.newItemName; // pull value from bound form model
             if (_.trim(newItemName)) { // don't allow empty names
-                this.items.push({ name: newItemName });
+                this.items.push({
+                    id: uuidv4(), // use UUID for unique identifier
+                    name: newItemName
+                });
             }
             this.newItemName = ''; // reset value, which also updates form field
         },
-        removeItem: function(index) {
+        removeItem: function(id) {
+            // we have to remove by ID, because of the alpha sorting
+            var index = _.findIndex(this.items, {id: id});
             this.items.splice(index, 1); // remove one item at the passed index
         }
     }
