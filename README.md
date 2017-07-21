@@ -36,4 +36,13 @@ Utilize the [`v-if` directive](https://vuejs.org/v2/guide/conditional.html) to c
 A simple example of a [custom component](https://vuejs.org/v2/guide/components.html), allowing for complex custom functionality to be wrapped in
 HTML-style tags.
 
--- Ed Finkler, <coj@funkatron.com>
+## Example 7 - Complex custom component
+
+Use a [custom component](https://vuejs.org/v2/guide/components.html) to encapsulate the complex functionality of the editable list group in simple HTML tags.
+Demonstrates more complex use of the [`<slot>` tag](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots) for "content distribution" a la [Web Components](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md)
+
+----
+
+Ed Finkler    
+<coj@funkatron.com>        
+[@funkatron](https://twitter.com/funkatron)
