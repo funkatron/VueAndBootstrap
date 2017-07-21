@@ -42,6 +42,13 @@ Use a [custom component](https://vuejs.org/v2/guide/components.html) to encapsul
 Demonstrates more complex use of the [`<slot>` tag](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots) for "content distribution"
 a la [Web Components](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md)
 
+## [Example 8](./Example%208) - Loading and saving data using watchers
+
+Building on example 7, we add a [watcher](https://vuejs.org/v2/guide/computed.html#Watchers) to save our list of items every time it changes. We leverage the [Store library](https://github.com/nbubna/store)
+to load data from and save to localStorage in the browser. 
+
+
+
 ----
 
 Ed Finkler    
