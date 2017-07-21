@@ -18,7 +18,7 @@ A basic "hello world"-type example, showing how to instantiate Vue and render of
 
 Rendering an array of data into a list view using the [`v-for` directive](https://vuejs.org/v2/guide/list.html). 
 
-## [Example 3]](./Example%203) - Rendering a *sorted* list view with `computed`
+## [Example 3](./Example%203) - Rendering a *sorted* list view with `computed`
 
 Using a [`computed` property](https://vuejs.org/v2/guide/computed.html) to render alphabetically-sorted data without modifying the original array. 
 
